@@ -115,3 +115,50 @@ if username == "Dan" && password == "pass123"{
 } else{
     print("No chance, really")
 }
+
+
+//Loops
+
+var i = 1
+
+while i <= 20 {
+    i * 7
+    i += 1
+}
+
+
+var whileArray = [1,2,3,4,5,6]
+whileArray.count
+
+i = 0
+while i < whileArray.count {
+    whileArray[i] += 1
+    i += 1
+}
+
+whileArray
+
+
+// For loops
+var forArray = ["Dan", "Graham", "Naomi", "Helena"]
+for name in forArray{
+    print("Hello \(name)")
+}
+
+// Allows index and value to be inspected
+for (index, value) in forArray.enumerated(){
+    print(index, value)
+}
+
+// This works by default for dictionaries
+var forDictionary = ["name": "Dan", "age": "21", "gender":"male"]
+for (key, value) in forDictionary{
+    print(key, value)
+}
+
+var forNumberArray = [8,7,19,28]
+
+var halvedNumberArray = forNumberArray.map { (num) in
+    Double(num)/2
+}
+
