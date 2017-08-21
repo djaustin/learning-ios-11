@@ -9,10 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var labelCounter: UILabel!
+    
+    @IBOutlet weak var txtName: UITextField!
+    @IBAction func ButtonClicked(_ sender: UIButton) {
+        // First check and unwrap contents of txtName.text
+        if let name = txtName.text {
+            labelCounter.text = "Hello " + name
+        }
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
