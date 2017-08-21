@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB52A7471F4AEAC300A15FB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB52A7461F4AEAC300A15FB1 /* AppDelegate.swift */; };
+		DB52A7491F4AEAC300A15FB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB52A7481F4AEAC300A15FB1 /* ViewController.swift */; };
+		DB52A74C1F4AEAC300A15FB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB52A74A1F4AEAC300A15FB1 /* Main.storyboard */; };
+		DB52A74E1F4AEAC300A15FB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB52A74D1F4AEAC300A15FB1 /* Assets.xcassets */; };
+		DB52A7511F4AEAC300A15FB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB52A74F1F4AEAC300A15FB1 /* LaunchScreen.storyboard */; };
+		DB52A75C1F4AEAC300A15FB1 /* WhatsMyAgeAgainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB52A75B1F4AEAC300A15FB1 /* WhatsMyAgeAgainTests.swift */; };
+		DB52A7671F4AEAC300A15FB1 /* WhatsMyAgeAgainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB52A7661F4AEAC300A15FB1 /* WhatsMyAgeAgainUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB52A7581F4AEAC300A15FB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB52A73B1F4AEAC300A15FB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB52A7421F4AEAC300A15FB1;
+			remoteInfo = WhatsMyAgeAgain;
+		};
+		DB52A7631F4AEAC300A15FB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB52A73B1F4AEAC300A15FB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB52A7421F4AEAC300A15FB1;
+			remoteInfo = WhatsMyAgeAgain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB52A7431F4AEAC300A15FB1 /* WhatsMyAgeAgain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsMyAgeAgain.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB52A7461F4AEAC300A15FB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB52A7481F4AEAC300A15FB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB52A74B1F4AEAC300A15FB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB52A74D1F4AEAC300A15FB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB52A7501F4AEAC300A15FB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB52A7521F4AEAC300A15FB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB52A7571F4AEAC300A15FB1 /* WhatsMyAgeAgainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatsMyAgeAgainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB52A75B1F4AEAC300A15FB1 /* WhatsMyAgeAgainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsMyAgeAgainTests.swift; sourceTree = "<group>"; };
+		DB52A75D1F4AEAC300A15FB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB52A7621F4AEAC300A15FB1 /* WhatsMyAgeAgainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatsMyAgeAgainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB52A7661F4AEAC300A15FB1 /* WhatsMyAgeAgainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsMyAgeAgainUITests.swift; sourceTree = "<group>"; };
+		DB52A7681F4AEAC300A15FB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB52A7401F4AEAC300A15FB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB52A7541F4AEAC300A15FB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB52A75F1F4AEAC300A15FB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB52A73A1F4AEAC300A15FB1 = {
+			isa = PBXGroup;
+			children = (
+				DB52A7451F4AEAC300A15FB1 /* WhatsMyAgeAgain */,
+				DB52A75A1F4AEAC300A15FB1 /* WhatsMyAgeAgainTests */,
+				DB52A7651F4AEAC300A15FB1 /* WhatsMyAgeAgainUITests */,
+				DB52A7441F4AEAC300A15FB1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB52A7441F4AEAC300A15FB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB52A7431F4AEAC300A15FB1 /* WhatsMyAgeAgain.app */,
+				DB52A7571F4AEAC300A15FB1 /* WhatsMyAgeAgainTests.xctest */,
+				DB52A7621F4AEAC300A15FB1 /* WhatsMyAgeAgainUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB52A7451F4AEAC300A15FB1 /* WhatsMyAgeAgain */ = {
+			isa = PBXGroup;
+			children = (
+				DB52A7461F4AEAC300A15FB1 /* AppDelegate.swift */,
+				DB52A7481F4AEAC300A15FB1 /* ViewController.swift */,
+				DB52A74A1F4AEAC300A15FB1 /* Main.storyboard */,
+				DB52A74D1F4AEAC300A15FB1 /* Assets.xcassets */,
+				DB52A74F1F4AEAC300A15FB1 /* LaunchScreen.storyboard */,
+				DB52A7521F4AEAC300A15FB1 /* Info.plist */,
+			);
+			path = WhatsMyAgeAgain;
+			sourceTree = "<group>";
+		};
+		DB52A75A1F4AEAC300A15FB1 /* WhatsMyAgeAgainTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB52A75B1F4AEAC300A15FB1 /* WhatsMyAgeAgainTests.swift */,
+				DB52A75D1F4AEAC300A15FB1 /* Info.plist */,
+			);
+			path = WhatsMyAgeAgainTests;
+			sourceTree = "<group>";
+		};
+		DB52A7651F4AEAC300A15FB1 /* WhatsMyAgeAgainUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB52A7661F4AEAC300A15FB1 /* WhatsMyAgeAgainUITests.swift */,
+				DB52A7681F4AEAC300A15FB1 /* Info.plist */,
+			);
+			path = WhatsMyAgeAgainUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB52A7421F4AEAC300A15FB1 /* WhatsMyAgeAgain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB52A76B1F4AEAC300A15FB1 /* Build configuration list for PBXNativeTarget "WhatsMyAgeAgain" */;
+			buildPhases = (
+				DB52A73F1F4AEAC300A15FB1 /* Sources */,
+				DB52A7401F4AEAC300A15FB1 /* Frameworks */,
+				DB52A7411F4AEAC300A15FB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhatsMyAgeAgain;
+			productName = WhatsMyAgeAgain;
+			productReference = DB52A7431F4AEAC300A15FB1 /* WhatsMyAgeAgain.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB52A7561F4AEAC300A15FB1 /* WhatsMyAgeAgainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB52A76E1F4AEAC300A15FB1 /* Build configuration list for PBXNativeTarget "WhatsMyAgeAgainTests" */;
+			buildPhases = (
+				DB52A7531F4AEAC300A15FB1 /* Sources */,
+				DB52A7541F4AEAC300A15FB1 /* Frameworks */,
+				DB52A7551F4AEAC300A15FB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB52A7591F4AEAC300A15FB1 /* PBXTargetDependency */,
+			);
+			name = WhatsMyAgeAgainTests;
+			productName = WhatsMyAgeAgainTests;
+			productReference = DB52A7571F4AEAC300A15FB1 /* WhatsMyAgeAgainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB52A7611F4AEAC300A15FB1 /* WhatsMyAgeAgainUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB52A7711F4AEAC300A15FB1 /* Build configuration list for PBXNativeTarget "WhatsMyAgeAgainUITests" */;
+			buildPhases = (
+				DB52A75E1F4AEAC300A15FB1 /* Sources */,
+				DB52A75F1F4AEAC300A15FB1 /* Frameworks */,
+				DB52A7601F4AEAC300A15FB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB52A7641F4AEAC300A15FB1 /* PBXTargetDependency */,
+			);
+			name = WhatsMyAgeAgainUITests;
+			productName = WhatsMyAgeAgainUITests;
+			productReference = DB52A7621F4AEAC300A15FB1 /* WhatsMyAgeAgainUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB52A73B1F4AEAC300A15FB1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Dan Austin";
+				TargetAttributes = {
+					DB52A7421F4AEAC300A15FB1 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					DB52A7561F4AEAC300A15FB1 = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = DB52A7421F4AEAC300A15FB1;
+					};
+					DB52A7611F4AEAC300A15FB1 = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = DB52A7421F4AEAC300A15FB1;
+					};
+				};
+			};
+			buildConfigurationList = DB52A73E1F4AEAC300A15FB1 /* Build configuration list for PBXProject "WhatsMyAgeAgain" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB52A73A1F4AEAC300A15FB1;
+			productRefGroup = DB52A7441F4AEAC300A15FB1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB52A7421F4AEAC300A15FB1 /* WhatsMyAgeAgain */,
+				DB52A7561F4AEAC300A15FB1 /* WhatsMyAgeAgainTests */,
+				DB52A7611F4AEAC300A15FB1 /* WhatsMyAgeAgainUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB52A7411F4AEAC300A15FB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB52A7511F4AEAC300A15FB1 /* LaunchScreen.storyboard in Resources */,
+				DB52A74E1F4AEAC300A15FB1 /* Assets.xcassets in Resources */,
+				DB52A74C1F4AEAC300A15FB1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB52A7551F4AEAC300A15FB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB52A7601F4AEAC300A15FB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB52A73F1F4AEAC300A15FB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB52A7491F4AEAC300A15FB1 /* ViewController.swift in Sources */,
+				DB52A7471F4AEAC300A15FB1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB52A7531F4AEAC300A15FB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB52A75C1F4AEAC300A15FB1 /* WhatsMyAgeAgainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB52A75E1F4AEAC300A15FB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB52A7671F4AEAC300A15FB1 /* WhatsMyAgeAgainUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB52A7591F4AEAC300A15FB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB52A7421F4AEAC300A15FB1 /* WhatsMyAgeAgain */;
+			targetProxy = DB52A7581F4AEAC300A15FB1 /* PBXContainerItemProxy */;
+		};
+		DB52A7641F4AEAC300A15FB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB52A7421F4AEAC300A15FB1 /* WhatsMyAgeAgain */;
+			targetProxy = DB52A7631F4AEAC300A15FB1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB52A74A1F4AEAC300A15FB1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB52A74B1F4AEAC300A15FB1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB52A74F1F4AEAC300A15FB1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB52A7501F4AEAC300A15FB1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB52A7691F4AEAC300A15FB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB52A76A1F4AEAC300A15FB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB52A76C1F4AEAC300A15FB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WhatsMyAgeAgain/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.djaustin.WhatsMyAgeAgain;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB52A76D1F4AEAC300A15FB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WhatsMyAgeAgain/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.djaustin.WhatsMyAgeAgain;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB52A76F1F4AEAC300A15FB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WhatsMyAgeAgainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.djaustin.WhatsMyAgeAgainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhatsMyAgeAgain.app/WhatsMyAgeAgain";
+			};
+			name = Debug;
+		};
+		DB52A7701F4AEAC300A15FB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WhatsMyAgeAgainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.djaustin.WhatsMyAgeAgainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhatsMyAgeAgain.app/WhatsMyAgeAgain";
+			};
+			name = Release;
+		};
+		DB52A7721F4AEAC300A15FB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = WhatsMyAgeAgainUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.djaustin.WhatsMyAgeAgainUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WhatsMyAgeAgain;
+			};
+			name = Debug;
+		};
+		DB52A7731F4AEAC300A15FB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = WhatsMyAgeAgainUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.djaustin.WhatsMyAgeAgainUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WhatsMyAgeAgain;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB52A73E1F4AEAC300A15FB1 /* Build configuration list for PBXProject "WhatsMyAgeAgain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB52A7691F4AEAC300A15FB1 /* Debug */,
+				DB52A76A1F4AEAC300A15FB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB52A76B1F4AEAC300A15FB1 /* Build configuration list for PBXNativeTarget "WhatsMyAgeAgain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB52A76C1F4AEAC300A15FB1 /* Debug */,
+				DB52A76D1F4AEAC300A15FB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB52A76E1F4AEAC300A15FB1 /* Build configuration list for PBXNativeTarget "WhatsMyAgeAgainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB52A76F1F4AEAC300A15FB1 /* Debug */,
+				DB52A7701F4AEAC300A15FB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB52A7711F4AEAC300A15FB1 /* Build configuration list for PBXNativeTarget "WhatsMyAgeAgainUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB52A7721F4AEAC300A15FB1 /* Debug */,
+				DB52A7731F4AEAC300A15FB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB52A73B1F4AEAC300A15FB1 /* Project object */;
+}
