@@ -11,9 +11,13 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBAction func submit(_ sender: UIButton) {
+        // Generate random number between 0 and 5
         let answer = arc4random_uniform(6)
+        
+        // Safely unwrap user input and conversion to Int
         if let guessString = txtGuess.text{
             if let guess = Int(guessString){
+                // ternary operator to change the result text based on user guess
                 lblResult.text = answer == guess ? "Correct!" : "Wrong! The answer was \(answer)"
             }
         }
