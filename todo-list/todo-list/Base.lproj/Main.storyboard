@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="todo_list" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gff-og-oeJ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Todos" id="3oQ-yx-MUE">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="tvb-MH-hKe">
+                                            <connections>
+                                                <segue destination="VSN-Kw-2Kv" kind="show" id="0W5-kK-6L6"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v3r-Oe-4sJ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="YTP-Zy-Slx">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YTP-Zy-Slx" id="QGu-v5-mIK">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="V5j-T4-hFs"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="sne-8O-h21"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="v3r-Oe-4sJ" secondAttribute="bottom" id="9Cg-v1-Zyd"/>
+                            <constraint firstItem="gff-og-oeJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Ex2-4d-Y1g"/>
+                            <constraint firstAttribute="trailing" secondItem="v3r-Oe-4sJ" secondAttribute="trailing" id="HNa-nu-PrO"/>
+                            <constraint firstItem="v3r-Oe-4sJ" firstAttribute="top" secondItem="gff-og-oeJ" secondAttribute="bottom" id="bEN-fT-21Z"/>
+                            <constraint firstItem="gff-og-oeJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cMh-dR-1wn"/>
+                            <constraint firstAttribute="trailing" secondItem="gff-og-oeJ" secondAttribute="trailing" id="dCC-k1-NvB"/>
+                            <constraint firstItem="v3r-Oe-4sJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oQX-VO-Y6T"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="v3r-Oe-4sJ" id="S7R-3J-K3V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+        <!--Add Todo View Controller-->
+        <scene sceneID="yLL-oE-85M">
+            <objects>
+                <viewController id="VSN-Kw-2Kv" customClass="AddTodoViewController" customModule="todo_list" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wE5-Lq-lKx"/>
+                        <viewControllerLayoutGuide type="bottom" id="zCy-lP-a2Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tUR-xC-Fzf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yvs-ck-jeS">
+                                <rect key="frame" x="16" y="90" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="VSN-Kw-2Kv" id="l0q-Xz-mcP"/>
+                                </connections>
+                            </textField>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yj0-oO-aQg">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Add a Todo" id="ePT-ee-ffH">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="myJ-8u-ydF">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="c5b-Am-uFN"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJh-6y-UDh">
+                                <rect key="frame" x="168" y="128" width="39" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="btnAddWasClicked:" destination="VSN-Kw-2Kv" eventType="touchUpInside" id="fk1-PY-u7e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Yj0-oO-aQg" firstAttribute="top" secondItem="wE5-Lq-lKx" secondAttribute="bottom" id="HNA-B7-CGa"/>
+                            <constraint firstItem="iJh-6y-UDh" firstAttribute="centerX" secondItem="tUR-xC-Fzf" secondAttribute="centerX" id="IAJ-2e-L6h"/>
+                            <constraint firstItem="Yj0-oO-aQg" firstAttribute="leading" secondItem="tUR-xC-Fzf" secondAttribute="leading" id="Oth-Gj-f1U"/>
+                            <constraint firstItem="Yvs-ck-jeS" firstAttribute="leading" secondItem="tUR-xC-Fzf" secondAttribute="leadingMargin" id="Owa-gy-EPq"/>
+                            <constraint firstAttribute="trailing" secondItem="Yj0-oO-aQg" secondAttribute="trailing" id="Piq-xL-Wcf"/>
+                            <constraint firstItem="Yvs-ck-jeS" firstAttribute="top" secondItem="Yj0-oO-aQg" secondAttribute="bottom" constant="26" id="epJ-rb-E1M"/>
+                            <constraint firstItem="Yvs-ck-jeS" firstAttribute="trailing" secondItem="tUR-xC-Fzf" secondAttribute="trailingMargin" id="npi-lh-PHi"/>
+                            <constraint firstItem="iJh-6y-UDh" firstAttribute="top" secondItem="Yvs-ck-jeS" secondAttribute="bottom" constant="8" id="r5P-rS-bk6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtTodo" destination="Yvs-ck-jeS" id="KKk-IE-Ovb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8qx-4R-gfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="930.39999999999998" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
