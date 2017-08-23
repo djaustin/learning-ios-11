@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="gif_stepper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SKR-L7-QeW">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uc2-Jh-scr">
+                                <rect key="frame" x="171" y="212" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9aY-09-yTA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SKR-L7-QeW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2K3-0p-KEv"/>
+                            <constraint firstItem="SKR-L7-QeW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CnN-p9-Shs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SKR-L7-QeW" secondAttribute="bottom" constant="270" id="G02-wP-u7r"/>
+                            <constraint firstItem="SKR-L7-QeW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="NxL-sF-ccB"/>
+                            <constraint firstItem="uc2-Jh-scr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="155" id="S96-LF-Rhq"/>
+                            <constraint firstItem="SKR-L7-QeW" firstAttribute="top" secondItem="uc2-Jh-scr" secondAttribute="bottom" constant="27" id="Sss-eb-71s"/>
+                            <constraint firstItem="SKR-L7-QeW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Yp3-pb-0wX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uc2-Jh-scr" secondAttribute="trailing" constant="156" id="egF-Yq-KkP"/>
+                            <constraint firstItem="SKR-L7-QeW" firstAttribute="top" secondItem="uc2-Jh-scr" secondAttribute="bottom" constant="27" id="iVo-jk-gXY"/>
+                            <constraint firstItem="SKR-L7-QeW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jkl-66-1ah"/>
+                            <constraint firstItem="SKR-L7-QeW" firstAttribute="top" secondItem="uc2-Jh-scr" secondAttribute="bottom" constant="27" id="sSM-Kt-45G"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SKR-L7-QeW" secondAttribute="trailing" constant="52" id="th4-1r-xhJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="SKR-L7-QeW" id="1ui-GI-bKF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
