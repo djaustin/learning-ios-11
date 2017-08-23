@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,34 +22,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SKR-L7-QeW">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame_00_delay-0.13s.gif" translatesAutoresizingMaskIntoConstraints="NO" id="SKR-L7-QeW">
+                                <rect key="frame" x="67" y="313" width="240" height="40"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uc2-Jh-scr">
-                                <rect key="frame" x="171" y="212" width="32" height="30"/>
-                                <state key="normal" title="Next"/>
+                                <rect key="frame" x="171" y="256" width="32" height="30"/>
+                                <state key="normal" title="Play"/>
                                 <connections>
                                     <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9aY-09-yTA"/>
+                                </connections>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EI8-CK-iKu">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items/>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZu-LU-0wo">
+                                <rect key="frame" x="67" y="419" width="34" height="30"/>
+                                <state key="normal" title="Fade"/>
+                                <connections>
+                                    <action selector="fadeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NkI-EE-dV6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxg-La-ckP">
+                                <rect key="frame" x="170" y="419" width="34" height="30"/>
+                                <state key="normal" title="Slide"/>
+                                <connections>
+                                    <action selector="slideClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qeH-lH-3Zt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mxj-9Y-4xO">
+                                <rect key="frame" x="271" y="419" width="36" height="30"/>
+                                <state key="normal" title="Grow"/>
+                                <connections>
+                                    <action selector="growClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RAL-mu-x3E"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="SKR-L7-QeW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2K3-0p-KEv"/>
+                            <constraint firstItem="fZu-LU-0wo" firstAttribute="leading" secondItem="SKR-L7-QeW" secondAttribute="leading" id="4Sj-YT-4AF"/>
                             <constraint firstItem="SKR-L7-QeW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CnN-p9-Shs"/>
+                            <constraint firstItem="fZu-LU-0wo" firstAttribute="top" secondItem="SKR-L7-QeW" secondAttribute="bottom" constant="66" id="Fwq-YJ-rwv"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SKR-L7-QeW" secondAttribute="bottom" constant="270" id="G02-wP-u7r"/>
                             <constraint firstItem="SKR-L7-QeW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="NxL-sF-ccB"/>
                             <constraint firstItem="uc2-Jh-scr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="155" id="S96-LF-Rhq"/>
                             <constraint firstItem="SKR-L7-QeW" firstAttribute="top" secondItem="uc2-Jh-scr" secondAttribute="bottom" constant="27" id="Sss-eb-71s"/>
+                            <constraint firstItem="Mxj-9Y-4xO" firstAttribute="top" secondItem="SKR-L7-QeW" secondAttribute="bottom" constant="66" id="Uoz-vQ-ef6"/>
+                            <constraint firstItem="zxg-La-ckP" firstAttribute="centerX" secondItem="SKR-L7-QeW" secondAttribute="centerX" id="WEU-op-IlA"/>
                             <constraint firstItem="SKR-L7-QeW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Yp3-pb-0wX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uc2-Jh-scr" secondAttribute="trailing" constant="156" id="egF-Yq-KkP"/>
+                            <constraint firstItem="Mxj-9Y-4xO" firstAttribute="trailing" secondItem="SKR-L7-QeW" secondAttribute="trailing" id="gyH-qC-1ag"/>
                             <constraint firstItem="SKR-L7-QeW" firstAttribute="top" secondItem="uc2-Jh-scr" secondAttribute="bottom" constant="27" id="iVo-jk-gXY"/>
+                            <constraint firstItem="zxg-La-ckP" firstAttribute="top" secondItem="SKR-L7-QeW" secondAttribute="bottom" constant="66" id="jFj-yu-r0v"/>
                             <constraint firstItem="SKR-L7-QeW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jkl-66-1ah"/>
                             <constraint firstItem="SKR-L7-QeW" firstAttribute="top" secondItem="uc2-Jh-scr" secondAttribute="bottom" constant="27" id="sSM-Kt-45G"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SKR-L7-QeW" secondAttribute="trailing" constant="52" id="th4-1r-xhJ"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="btnPlayPause" destination="uc2-Jh-scr" id="gsI-EE-iAT"/>
                         <outlet property="imageView" destination="SKR-L7-QeW" id="1ui-GI-bKF"/>
                     </connections>
                 </viewController>
@@ -57,4 +92,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="frame_00_delay-0.13s.gif" width="480" height="480"/>
+    </resources>
 </document>
