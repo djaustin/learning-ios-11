@@ -15,6 +15,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var lblWeather: UILabel!
     @IBOutlet weak var txtLocation: UITextField!
+    
     @IBAction func buttonClicked(_ sender: Any) {
         if let location = txtLocation.text {
             activityIndicator.startAnimating()
