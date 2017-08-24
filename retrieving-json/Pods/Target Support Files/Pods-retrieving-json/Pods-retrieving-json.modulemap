@@ -1,0 +1,6 @@
+framework module Pods_retrieving_json {
+  umbrella header "Pods-retrieving-json-umbrella.h"
+
+  export *
+  module * { export * }
+}

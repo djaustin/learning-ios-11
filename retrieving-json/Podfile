@@ -1,0 +1,24 @@
+project 'retrieving-json.xcodeproj'
+
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'retrieving-json' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for retrieving-json
+
+  pod 'SwiftyJSON'
+
+  target 'retrieving-jsonTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'retrieving-jsonUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
