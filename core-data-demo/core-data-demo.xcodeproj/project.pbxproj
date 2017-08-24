@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB3DBAEB1F4EFD9100E2C46B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DBAEA1F4EFD9100E2C46B /* ProfileViewController.swift */; };
 		DB5295401F4EDA0A009E3A25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB52953F1F4EDA0A009E3A25 /* AppDelegate.swift */; };
 		DB5295421F4EDA0A009E3A25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5295411F4EDA0A009E3A25 /* ViewController.swift */; };
 		DB5295451F4EDA0A009E3A25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5295431F4EDA0A009E3A25 /* Main.storyboard */; };
@@ -15,6 +16,10 @@
 		DB52954D1F4EDA0A009E3A25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB52954B1F4EDA0A009E3A25 /* LaunchScreen.storyboard */; };
 		DB5295581F4EDA0A009E3A25 /* core_data_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5295571F4EDA0A009E3A25 /* core_data_demoTests.swift */; };
 		DB5295631F4EDA0B009E3A25 /* core_data_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5295621F4EDA0B009E3A25 /* core_data_demoUITests.swift */; };
+		DB6308D21F4F068F00ED26FA /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6308CE1F4F068F00ED26FA /* User+CoreDataClass.swift */; };
+		DB6308D31F4F068F00ED26FA /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6308CF1F4F068F00ED26FA /* User+CoreDataProperties.swift */; };
+		DB6308D41F4F068F00ED26FA /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6308D01F4F068F00ED26FA /* Person+CoreDataClass.swift */; };
+		DB6308D51F4F068F00ED26FA /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6308D11F4F068F00ED26FA /* Person+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB3DBAEA1F4EFD9100E2C46B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DB52953C1F4EDA0A009E3A25 /* core-data-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "core-data-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB52953F1F4EDA0A009E3A25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB5295411F4EDA0A009E3A25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +55,10 @@
 		DB52955E1F4EDA0B009E3A25 /* core-data-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "core-data-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5295621F4EDA0B009E3A25 /* core_data_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = core_data_demoUITests.swift; sourceTree = "<group>"; };
 		DB5295641F4EDA0B009E3A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB6308CE1F4F068F00ED26FA /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "User+CoreDataClass.swift"; path = "core-data-demo/User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DB6308CF1F4F068F00ED26FA /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "User+CoreDataProperties.swift"; path = "core-data-demo/User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DB6308D01F4F068F00ED26FA /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Person+CoreDataClass.swift"; path = "core-data-demo/Person+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DB6308D11F4F068F00ED26FA /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Person+CoreDataProperties.swift"; path = "core-data-demo/Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,10 @@
 		DB5295331F4EDA0A009E3A25 = {
 			isa = PBXGroup;
 			children = (
+				DB6308CE1F4F068F00ED26FA /* User+CoreDataClass.swift */,
+				DB6308CF1F4F068F00ED26FA /* User+CoreDataProperties.swift */,
+				DB6308D01F4F068F00ED26FA /* Person+CoreDataClass.swift */,
+				DB6308D11F4F068F00ED26FA /* Person+CoreDataProperties.swift */,
 				DB52953E1F4EDA0A009E3A25 /* core-data-demo */,
 				DB5295561F4EDA0A009E3A25 /* core-data-demoTests */,
 				DB5295611F4EDA0B009E3A25 /* core-data-demoUITests */,
@@ -102,6 +116,7 @@
 				DB52953F1F4EDA0A009E3A25 /* AppDelegate.swift */,
 				DB5295411F4EDA0A009E3A25 /* ViewController.swift */,
 				DB5295431F4EDA0A009E3A25 /* Main.storyboard */,
+				DB3DBAEA1F4EFD9100E2C46B /* ProfileViewController.swift */,
 				DB5295491F4EDA0A009E3A25 /* Assets.xcassets */,
 				DB52954B1F4EDA0A009E3A25 /* LaunchScreen.storyboard */,
 				DB52954E1F4EDA0A009E3A25 /* Info.plist */,
@@ -263,8 +278,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB5295421F4EDA0A009E3A25 /* ViewController.swift in Sources */,
+				DB6308D41F4F068F00ED26FA /* Person+CoreDataClass.swift in Sources */,
 				DB5295481F4EDA0A009E3A25 /* core_data_demo.xcdatamodeld in Sources */,
+				DB6308D31F4F068F00ED26FA /* User+CoreDataProperties.swift in Sources */,
+				DB6308D51F4F068F00ED26FA /* Person+CoreDataProperties.swift in Sources */,
+				DB3DBAEB1F4EFD9100E2C46B /* ProfileViewController.swift in Sources */,
 				DB5295401F4EDA0A009E3A25 /* AppDelegate.swift in Sources */,
+				DB6308D21F4F068F00ED26FA /* User+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
