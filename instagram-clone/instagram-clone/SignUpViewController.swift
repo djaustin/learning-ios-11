@@ -15,11 +15,12 @@ class SignUpViewController: UIViewController {
 
     @IBOutlet weak var txtConfirmPassword: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var txtUsername: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
     @IBAction func signUpWasPressed(_ sender: Any) {
         if allFieldsCompleted() {
             if txtPassword.text! == txtConfirmPassword.text!{
-                createNewUser(withUsername: txtEmail.text!, andPassword: txtPassword.text!)
+                createNewUser(withUsername: txtUsername.text!, password: txtPassword.text!, email: txtEmail.text!)
             } else {
                 launchOkAlert(withTitle: "Mismatched Passwords", andText: "Passwords do not match. Please try again")
             }
@@ -50,16 +51,19 @@ class SignUpViewController: UIViewController {
             return false
         }
         
-        return !email.isEmpty && !password.isEmpty && !confirmPassword.isEmpty
+        guard let username = txtUsername.text else{
+            return false
+        }
+        return !email.isEmpty && !password.isEmpty && !confirmPassword.isEmpty && !username.isEmpty
         
     }
     
     // Creates a new Parse user with the given credentials
-    func createNewUser(withUsername username: String, andPassword password: String){
+    func createNewUser(withUsername username: String, password: String, email: String){
         let user = PFUser()
         user.username = username
         user.password = password
-        user.email = username
+        user.email = email
         pauseApplication()
         user.signUpInBackground { (success, error) in
             self.resumeApplication()

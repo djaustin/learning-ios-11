@@ -10,13 +10,29 @@ import UIKit
 import Parse
 class UserTableViewController: UITableViewController {
 
+    let indicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+    let refresher = UIRefreshControl()
+    
+    var users = [PFUser]()
+    var usersFollowed = [PFUser]()
     @IBAction func logoutWasPressed(_ sender: UIBarButtonItem) {
         PFUser.logOut()
         performSegue(withIdentifier: "showLogin", sender: nil)
     }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        populateTableWithUsernames()
+        indicator.center = view.center
+        indicator.activityIndicatorViewStyle = .gray
+        view.addSubview(indicator)
+        refresher.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refresher.addTarget(self, action: #selector(populateTableWithUsernames), for: .valueChanged)
+        
+        tableView.addSubview(refresher)
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -24,6 +40,56 @@ class UserTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
+    @objc func populateTableWithUsernames(){
+        
+        // Get all users other than the currently logged in user
+        let query = PFUser.query()?.whereKey("objectId", notEqualTo: PFUser.current()?.objectId as Any)
+        
+        query?.findObjectsInBackground(block: { (results, error) in
+            if let results = results{
+                self.users.removeAll()
+                for object in results{
+                    print(object)
+                    if let user = object as? PFUser{
+                        self.users.append(user)
+                    }
+                }
+                
+                self.tableView.reloadData()
+                
+            } else {
+                if let error = error {
+                    print("Error:", error.localizedDescription)
+                }
+            }
+        })
+        
+        // Get list of users that logged in user is following
+        let relation = PFUser.current()?.relation(forKey: "following")
+        relation?.query().findObjectsInBackground(block: { (results, error) in
+            if let results = results {
+                self.usersFollowed.removeAll()
+                for result in results {
+                    if let user = result as? PFUser{
+                        self.usersFollowed.append(user)
+                    }
+                    
+                    DispatchQueue.main.async {
+                        // Reload table now that we have retrieved the follower information
+                        self.tableView.reloadData()
+                        // Stop the pull-to-update animation
+                        self.refresher.endRefreshing()
+                    }
+                }
+            } else {
+                if let error = error {
+                    print("Error:", error.localizedDescription)
+                }
+            }
+        })
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -32,25 +98,93 @@ class UserTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return users.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let userAtCell = users[indexPath.row]
         // Configure the cell...
-
+        cell.textLabel?.text = userAtCell.username
+    
+        let userFollowed = usersFollowed.contains { (user) -> Bool in
+            user.objectId == userAtCell.objectId
+        }
+        
+        cell.accessoryType = userFollowed ? .checkmark : .none
+        
         return cell
     }
-    */
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        let userAtCell = users[indexPath.row]
+        let userFollowed = usersFollowed.contains { (user) -> Bool in
+            user.objectId == userAtCell.objectId
+        }
+
+        if userFollowed{
+            unfollowUser(atIndex: indexPath.row)
+            cell?.accessoryType = .none
+        } else {
+            followUser(atIndex: indexPath.row)
+            cell?.accessoryType = .checkmark
+        }
+    }
+    
+    
+    func unfollowUser(atIndex index: Int){
+        pauseApplication()
+        let currentUser = PFUser.current()
+        let userToUnfollow = users[index]
+        let following = currentUser?.relation(forKey: "following")
+        
+        following?.remove(userToUnfollow)
+        currentUser?.saveInBackground(block: { (success, error) in
+            self.resumeApplication()
+            if(success){
+                self.usersFollowed.remove(at: index)
+            } else {
+                if let error = error {
+                    print("Error:", error.localizedDescription)
+                }
+            }
+        })
+    }
+    
+    func followUser(atIndex index: Int){
+        pauseApplication()
+        let currentUser = PFUser.current()
+        let userToFollow = users[index]
+        let following = currentUser?.relation(forKey: "following")
+        
+        following?.add(userToFollow)
+        currentUser?.saveInBackground(block: { (success, error) in
+            self.resumeApplication()
+            if success {
+                self.usersFollowed.append(userToFollow)
+            } else {
+                if let error = error {
+                    print("Error:", error.localizedDescription)
+                }
+            }
+        })
+    }
+    
+    func pauseApplication(){
+        indicator.startAnimating()
+        UIApplication.shared.beginIgnoringInteractionEvents()
+        
+    }
+    func resumeApplication(){
+        indicator.stopAnimating()
+        UIApplication.shared.endIgnoringInteractionEvents()
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
