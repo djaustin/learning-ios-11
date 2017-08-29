@@ -12,12 +12,12 @@ class UserTableViewController: UITableViewController {
 
     let indicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
     let refresher = UIRefreshControl()
-    
+
     var users = [PFUser]()
     var usersFollowed = [PFUser]()
     @IBAction func logoutWasPressed(_ sender: UIBarButtonItem) {
         PFUser.logOut()
-        performSegue(withIdentifier: "showLogin", sender: nil)
+        navigationController?.popViewController(animated: true)
     }
     
     
@@ -128,26 +128,31 @@ class UserTableViewController: UITableViewController {
         }
 
         if userFollowed{
-            unfollowUser(atIndex: indexPath.row)
+            unfollowUser(userAtCell)
             cell?.accessoryType = .none
         } else {
-            followUser(atIndex: indexPath.row)
+            followUser(userAtCell)
             cell?.accessoryType = .checkmark
         }
     }
     
     
-    func unfollowUser(atIndex index: Int){
+    func unfollowUser(_ userToUnfollow: PFUser){
         pauseApplication()
         let currentUser = PFUser.current()
-        let userToUnfollow = users[index]
         let following = currentUser?.relation(forKey: "following")
+        let index = usersFollowed.index { (user) -> Bool in
+            user.objectId == userToUnfollow.objectId
+        }
+        guard let userIndex = index else {
+            return
+        }
         
         following?.remove(userToUnfollow)
         currentUser?.saveInBackground(block: { (success, error) in
             self.resumeApplication()
             if(success){
-                self.usersFollowed.remove(at: index)
+                self.usersFollowed.remove(at: userIndex)
             } else {
                 if let error = error {
                     print("Error:", error.localizedDescription)
@@ -156,13 +161,13 @@ class UserTableViewController: UITableViewController {
         })
     }
     
-    func followUser(atIndex index: Int){
+    func followUser(_ userToFollow: PFUser){
         pauseApplication()
         let currentUser = PFUser.current()
-        let userToFollow = users[index]
         let following = currentUser?.relation(forKey: "following")
         
         following?.add(userToFollow)
+        
         currentUser?.saveInBackground(block: { (success, error) in
             self.resumeApplication()
             if success {
