@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let config = ParseClientConfiguration {
             $0.applicationId = "7e40ab6050412721a1eed5ca2f40014721783cfb"
             $0.clientKey = "6499182a85ce42aa091311d10efcce24944e3bf8"
-            $0.server = "http://ec2-35-160-66-20.us-west-2.compute.amazonaws.com:80/parse"
+            $0.server = "http://djaustin.tech:80/parse"
         }
         Parse.initialize(with: config)
         return true

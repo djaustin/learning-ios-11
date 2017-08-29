@@ -49,7 +49,7 @@
 		<true/>
 		<key>NSExceptionDomains</key>
 		<dict>
-			<key>ec2-35-160-66-20.us-west-2.compute.amazonaws.com</key>
+			<key>djaustin.tech</key>
 			<dict>
 				<key>NSExceptionAllowsInsecureHTTPLoads</key>
 				<true/>
