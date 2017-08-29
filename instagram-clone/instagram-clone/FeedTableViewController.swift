@@ -30,27 +30,33 @@ class FeedTableViewController: UITableViewController {
     }
 
     @objc func populatePostsFromFollowedUsers(){
-        
-        print("Entered populate...")
-        guard let followedUsers = try? PFUser.current()?.relation(forKey: "following").query().findObjects() else {
-            print("Unable to retrive user posts")
-            return
-        }
-        
-        guard let followedUsersUnwrapped = followedUsers else {
-            print("Unable to retrive user posts")
-            return
-        }
-        print("Followed users", followedUsersUnwrapped)
-        let postQuery = PFQuery(className: "Post")
-        postQuery.addDescendingOrder("createdAt")
-        postQuery.includeKey("author")
-        postQuery.whereKey("author", containedIn: followedUsersUnwrapped)
-        var posts = try? postQuery.findObjects()
-        if let posts = posts {
-            followedPosts.append(contentsOf: posts)
-        }
-        refresher.endRefreshing()
+    
+        PFUser.current()?.relation(forKey: "following").query().findObjectsInBackground(block: { (results, error) in
+            if let followedUsers = results as? [PFUser] {
+                let postQuery = PFQuery(className: "Post")
+                postQuery.addDescendingOrder("createdAt")
+                postQuery.includeKey("author")
+                postQuery.whereKey("author", containedIn: followedUsers)
+                postQuery.findObjectsInBackground(block: { (posts, error) in
+                    if let posts = posts{
+                        self.followedPosts.removeAll()
+                        self.followedPosts.append(contentsOf: posts)
+                    } else {
+                        if let error = error {
+                            print("Error:", error.localizedDescription)
+                        }
+                    }
+                    DispatchQueue.main.async{
+                        self.refresher.endRefreshing()
+                        self.tableView.reloadData()
+                    }
+                })
+            } else {
+                if let error = error {
+                    print("Error:", error.localizedDescription)
+                }
+            }
+        })
     }
     
     override func didReceiveMemoryWarning() {

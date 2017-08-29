@@ -62,7 +62,7 @@
             </objects>
             <point key="canvasLocation" x="521" y="1061"/>
         </scene>
-        <!--Feed Table View Controller-->
+        <!--Feed-->
         <scene sceneID="GAt-Xg-ewE">
             <objects>
                 <tableViewController id="kzk-aD-CQx" customClass="FeedTableViewController" customModule="instagram_clone" customModuleProvider="target" sceneMemberID="viewController">
@@ -123,10 +123,11 @@
                             <outlet property="delegate" destination="kzk-aD-CQx" id="Vux-fC-B9Y"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Feed" id="cKj-nG-cNZ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VsF-OM-c90" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1168.8" y="1807.6461769115444"/>
+            <point key="canvasLocation" x="1327" y="1060"/>
         </scene>
         <!--Post Image-->
         <scene sceneID="eq2-8c-JKo">
@@ -198,7 +199,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZKM-lc-T1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-239.19999999999999" y="1807.6461769115444"/>
+            <point key="canvasLocation" x="-260" y="1059"/>
         </scene>
         <!--Log In-->
         <scene sceneID="tne-QT-ifu">
@@ -376,6 +377,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="2sV-Cd-ZRy"/>
-        <segue reference="QJo-6s-szU"/>
+        <segue reference="cUp-46-NfO"/>
     </inferredMetricsTieBreakers>
 </document>
