@@ -7,26 +7,42 @@
 //
 
 import UIKit
+import Parse
 
 class PostViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+
+    let indicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+
+
+    @IBOutlet weak var btnPost: UIButton!
+    @IBOutlet weak var progressBar: UIProgressView!
     let imagePicker = UIImagePickerController()
     @IBAction func postWasPressed(_ sender: Any) {
+        uploadNewPost()
         
     }
-    @IBOutlet weak var txtComment: UITextField!
+    @IBOutlet weak var txtCaption: UITextField!
     @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        txtComment.delegate = self
+        // Activity indicator to show when uploading files
+        indicator.center = view.center
+        indicator.activityIndicatorViewStyle = .gray
+        
+        
+        txtCaption.delegate = self
         imagePicker.delegate = self
+        
         addTapRecognizerToImageView()
-        // Do any additional setup after loading the view.
+        view.addSubview(indicator)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let image = info[UIImagePickerControllerOriginalImage] as? UIImage
         imageView.image = image
         imageView.backgroundColor = nil
+        btnPost.isEnabled = true
         dismiss(animated: true, completion: nil)
     }
     
@@ -48,8 +64,9 @@ class PostViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         alert.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { (action) in
             print("User chose photo library")
             self.imagePicker.sourceType = .savedPhotosAlbum
-            self.dismiss(animated: true, completion: nil)
+            self.present(self.imagePicker, animated: true, completion: nil)
         }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: {_ in self.dismiss(animated: true, completion: nil)}))
         present(alert, animated: true, completion: nil)
     }
 
@@ -81,5 +98,77 @@ class PostViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         textField.resignFirstResponder()
         // Tell text field to process return with default behaviour
         return true
+    }
+    
+    func pauseApplication(){
+        indicator.startAnimating()
+        UIApplication.shared.beginIgnoringInteractionEvents()
+        
+    }
+    func resumeApplication(){
+        indicator.stopAnimating()
+        UIApplication.shared.endIgnoringInteractionEvents()
+    }
+    
+    func uploadNewPost(){
+        guard let image = imageView.image else {
+            return
+        }
+        guard let caption = txtCaption.text else {
+            return
+        }
+        guard let imageData = image.jpeg(.medium) else {
+            return
+        }
+        let newPost = PFObject(className: "Post")
+
+        let parseImage = PFFile(name: "image.jpg", data: imageData)!
+        pauseApplication()
+        progressBar.isHidden = false
+        
+        // Upload image and only save new post if successfully uploaded
+        parseImage.saveInBackground({ (success, error) in
+            self.progressBar.isHidden = true
+            if(success){
+                newPost["image"] = parseImage
+                newPost["author"] = PFUser.current()!
+                newPost["caption"] = caption
+                let acl = PFACL()
+                acl.getPublicReadAccess = true
+                acl.getPublicWriteAccess = false
+                acl.setWriteAccess(true, for: PFUser.current()!)
+                acl.setReadAccess(true, for: PFUser.current()!)
+                newPost.acl = acl
+                
+                newPost.saveInBackground { (success, error) in
+                    self.resumeApplication()
+                    if success {
+                        print("Successfully uploaded")
+                        self.clearFormControls()
+                    } else {
+                        if let error = error {
+                            print("Error:", error.localizedDescription)
+                        }
+                    }
+                }
+            } else {
+                self.resumeApplication()
+                if let error = error {
+                    print("Error:", error.localizedDescription)
+                }
+            }
+        }) { (progress) in
+            let progressFloat = Float(progress)
+            DispatchQueue.main.async {
+                self.progressBar.progress = progressFloat/100
+            }
+        }
+    }
+    
+    func clearFormControls(){
+        txtCaption.text = ""
+        imageView.image = #imageLiteral(resourceName: "icons8-plus_math_filled.png")
+        imageView.backgroundColor = UIColor.lightGray
+        btnPost.isEnabled = false
     }
 }

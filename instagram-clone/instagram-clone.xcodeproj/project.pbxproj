@@ -22,6 +22,7 @@
 		DBD3B6041F549139003F75C1 /* icons8-login_rounded_right.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD3B6031F5490AC003F75C1 /* icons8-login_rounded_right.png */; };
 		DBF541781F5496BB00F40DCF /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF541771F5496BB00F40DCF /* PostViewController.swift */; };
 		DBF5417A1F5497EC00F40DCF /* icons8-plus_math_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = DBF541791F5497E300F40DCF /* icons8-plus_math_filled.png */; };
+		DBFC2A741F554AE9003A01EF /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC2A731F554AE9003A01EF /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,9 @@
 		DBD3B6031F5490AC003F75C1 /* icons8-login_rounded_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-login_rounded_right.png"; path = "../../../../../com.visualpharm.Icons8/ios/User Interface/75/0a60ff/icons8-login_rounded_right.png"; sourceTree = "<group>"; };
 		DBF541771F5496BB00F40DCF /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		DBF541791F5497E300F40DCF /* icons8-plus_math_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-plus_math_filled.png"; sourceTree = "<group>"; };
+		DBFC2A731F554AE9003A01EF /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		DBFC2A771F554EA3003A01EF /* icons8-group_foreground_selected_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-group_foreground_selected_filled.png"; sourceTree = "<group>"; };
+		DBFC2A781F554EC6003A01EF /* icons8-news_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-news_filled.png"; path = "../../../../../com.visualpharm.Icons8/ios/Popular Icons/25/0a60ff/icons8-news_filled.png"; sourceTree = "<group>"; };
 		DC1E9C8FF59E9C03FD4A939A /* Pods-instagram-clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagram-clone.release.xcconfig"; path = "Pods/Target Support Files/Pods-instagram-clone/Pods-instagram-clone.release.xcconfig"; sourceTree = "<group>"; };
 		E4E606C3E73106D2CE9CC54D /* Pods-instagram-cloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagram-cloneTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-instagram-cloneTests/Pods-instagram-cloneTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				DBF541771F5496BB00F40DCF /* PostViewController.swift */,
+				DBFC2A781F554EC6003A01EF /* icons8-news_filled.png */,
+				DBFC2A771F554EA3003A01EF /* icons8-group_foreground_selected_filled.png */,
 				DBF541791F5497E300F40DCF /* icons8-plus_math_filled.png */,
 				DBD3B6031F5490AC003F75C1 /* icons8-login_rounded_right.png */,
 				DB63FD581F5091B200BA524F /* AppDelegate.swift */,
@@ -148,6 +154,7 @@
 				DB63FD5F1F5091B200BA524F /* Assets.xcassets */,
 				DB63FD611F5091B200BA524F /* LaunchScreen.storyboard */,
 				DB63FD641F5091B200BA524F /* Info.plist */,
+				DBFC2A731F554AE9003A01EF /* UIImageExtension.swift */,
 			);
 			path = "instagram-clone";
 			sourceTree = "<group>";
@@ -468,6 +475,7 @@
 				DB4ABB751F51C49500B0FC25 /* UserTableViewController.swift in Sources */,
 				DB63FD591F5091B200BA524F /* AppDelegate.swift in Sources */,
 				DBF541781F5496BB00F40DCF /* PostViewController.swift in Sources */,
+				DBFC2A741F554AE9003A01EF /* UIImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
