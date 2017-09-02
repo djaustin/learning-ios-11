@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB38B9691F5AB2710088BE5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB38B9681F5AB2710088BE5E /* AppDelegate.swift */; };
+		DB38B96B1F5AB2710088BE5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB38B96A1F5AB2710088BE5E /* ViewController.swift */; };
+		DB38B96E1F5AB2710088BE5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB38B96C1F5AB2710088BE5E /* Main.storyboard */; };
+		DB38B9701F5AB2710088BE5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB38B96F1F5AB2710088BE5E /* Assets.xcassets */; };
+		DB38B9731F5AB2710088BE5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB38B9711F5AB2710088BE5E /* LaunchScreen.storyboard */; };
+		EEC2AE8A479D7D9EE304DCF4 /* Pods_tinder_style_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5A716B0807CAC50E04DE88 /* Pods_tinder_style_app.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		52BFB742652638B186F30325 /* Pods-tinder-style-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tinder-style-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tinder-style-app/Pods-tinder-style-app.debug.xcconfig"; sourceTree = "<group>"; };
+		DB38B9651F5AB2710088BE5E /* tinder-style-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tinder-style-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB38B9681F5AB2710088BE5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB38B96A1F5AB2710088BE5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB38B96D1F5AB2710088BE5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB38B96F1F5AB2710088BE5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB38B9721F5AB2710088BE5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB38B9741F5AB2710088BE5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC5A716B0807CAC50E04DE88 /* Pods_tinder_style_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tinder_style_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F20B6DA1206B461FB521FC8E /* Pods-tinder-style-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tinder-style-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-tinder-style-app/Pods-tinder-style-app.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB38B9621F5AB2710088BE5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEC2AE8A479D7D9EE304DCF4 /* Pods_tinder_style_app.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E7372D358AC372F50993492 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52BFB742652638B186F30325 /* Pods-tinder-style-app.debug.xcconfig */,
+				F20B6DA1206B461FB521FC8E /* Pods-tinder-style-app.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A9B3730A7CD5611E355A145F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC5A716B0807CAC50E04DE88 /* Pods_tinder_style_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB38B95C1F5AB2710088BE5E = {
+			isa = PBXGroup;
+			children = (
+				DB38B9671F5AB2710088BE5E /* tinder-style-app */,
+				DB38B9661F5AB2710088BE5E /* Products */,
+				3E7372D358AC372F50993492 /* Pods */,
+				A9B3730A7CD5611E355A145F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DB38B9661F5AB2710088BE5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB38B9651F5AB2710088BE5E /* tinder-style-app.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB38B9671F5AB2710088BE5E /* tinder-style-app */ = {
+			isa = PBXGroup;
+			children = (
+				DB38B9681F5AB2710088BE5E /* AppDelegate.swift */,
+				DB38B96A1F5AB2710088BE5E /* ViewController.swift */,
+				DB38B96C1F5AB2710088BE5E /* Main.storyboard */,
+				DB38B96F1F5AB2710088BE5E /* Assets.xcassets */,
+				DB38B9711F5AB2710088BE5E /* LaunchScreen.storyboard */,
+				DB38B9741F5AB2710088BE5E /* Info.plist */,
+			);
+			path = "tinder-style-app";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB38B9641F5AB2710088BE5E /* tinder-style-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB38B9771F5AB2710088BE5E /* Build configuration list for PBXNativeTarget "tinder-style-app" */;
+			buildPhases = (
+				01A889D09B54A878F1AC55DB /* [CP] Check Pods Manifest.lock */,
+				DB38B9611F5AB2710088BE5E /* Sources */,
+				DB38B9621F5AB2710088BE5E /* Frameworks */,
+				DB38B9631F5AB2710088BE5E /* Resources */,
+				27845E89745969464EE64CFD /* [CP] Embed Pods Frameworks */,
+				40329F3BF2B96CF00D4F1837 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tinder-style-app";
+			productName = "tinder-style-app";
+			productReference = DB38B9651F5AB2710088BE5E /* tinder-style-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB38B95D1F5AB2710088BE5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Dan Austin";
+				TargetAttributes = {
+					DB38B9641F5AB2710088BE5E = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DB38B9601F5AB2710088BE5E /* Build configuration list for PBXProject "tinder-style-app" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB38B95C1F5AB2710088BE5E;
+			productRefGroup = DB38B9661F5AB2710088BE5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB38B9641F5AB2710088BE5E /* tinder-style-app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB38B9631F5AB2710088BE5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB38B9731F5AB2710088BE5E /* LaunchScreen.storyboard in Resources */,
+				DB38B9701F5AB2710088BE5E /* Assets.xcassets in Resources */,
+				DB38B96E1F5AB2710088BE5E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01A889D09B54A878F1AC55DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		27845E89745969464EE64CFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tinder-style-app/Pods-tinder-style-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40329F3BF2B96CF00D4F1837 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tinder-style-app/Pods-tinder-style-app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB38B9611F5AB2710088BE5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB38B96B1F5AB2710088BE5E /* ViewController.swift in Sources */,
+				DB38B9691F5AB2710088BE5E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DB38B96C1F5AB2710088BE5E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB38B96D1F5AB2710088BE5E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB38B9711F5AB2710088BE5E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB38B9721F5AB2710088BE5E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB38B9751F5AB2710088BE5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB38B9761F5AB2710088BE5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB38B9781F5AB2710088BE5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52BFB742652638B186F30325 /* Pods-tinder-style-app.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9B2KZDAUR;
+				INFOPLIST_FILE = "tinder-style-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.djaustin.tinder-style-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB38B9791F5AB2710088BE5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F20B6DA1206B461FB521FC8E /* Pods-tinder-style-app.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9B2KZDAUR;
+				INFOPLIST_FILE = "tinder-style-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.djaustin.tinder-style-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB38B9601F5AB2710088BE5E /* Build configuration list for PBXProject "tinder-style-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB38B9751F5AB2710088BE5E /* Debug */,
+				DB38B9761F5AB2710088BE5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB38B9771F5AB2710088BE5E /* Build configuration list for PBXNativeTarget "tinder-style-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB38B9781F5AB2710088BE5E /* Debug */,
+				DB38B9791F5AB2710088BE5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB38B95D1F5AB2710088BE5E /* Project object */;
+}
