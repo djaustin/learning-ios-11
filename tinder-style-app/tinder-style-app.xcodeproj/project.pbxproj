@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB090CE21F5BFE4F00253481 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB090CE11F5BFE4F00253481 /* UserDetailsViewController.swift */; };
 		DB38B9691F5AB2710088BE5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB38B9681F5AB2710088BE5E /* AppDelegate.swift */; };
 		DB38B96B1F5AB2710088BE5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB38B96A1F5AB2710088BE5E /* ViewController.swift */; };
 		DB38B96E1F5AB2710088BE5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB38B96C1F5AB2710088BE5E /* Main.storyboard */; };
-		DB38B9701F5AB2710088BE5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB38B96F1F5AB2710088BE5E /* Assets.xcassets */; };
 		DB38B9731F5AB2710088BE5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB38B9711F5AB2710088BE5E /* LaunchScreen.storyboard */; };
+		DB3BB50C1F5BFB4200E4ED66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB38B96F1F5AB2710088BE5E /* Assets.xcassets */; };
+		DB8373771F5B224600B70DE5 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8373761F5B224600B70DE5 /* LogInViewController.swift */; };
 		EEC2AE8A479D7D9EE304DCF4 /* Pods_tinder_style_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5A716B0807CAC50E04DE88 /* Pods_tinder_style_app.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		52BFB742652638B186F30325 /* Pods-tinder-style-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tinder-style-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tinder-style-app/Pods-tinder-style-app.debug.xcconfig"; sourceTree = "<group>"; };
+		DB090CE01F5BFD2000253481 /* icons8-name_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-name_filled.png"; sourceTree = "<group>"; };
+		DB090CE11F5BFE4F00253481 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 		DB38B9651F5AB2710088BE5E /* tinder-style-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tinder-style-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB38B9681F5AB2710088BE5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB38B96A1F5AB2710088BE5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,7 @@
 		DB38B96F1F5AB2710088BE5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB38B9721F5AB2710088BE5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB38B9741F5AB2710088BE5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB8373761F5B224600B70DE5 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		EC5A716B0807CAC50E04DE88 /* Pods_tinder_style_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tinder_style_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20B6DA1206B461FB521FC8E /* Pods-tinder-style-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tinder-style-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-tinder-style-app/Pods-tinder-style-app.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,8 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				DB38B9681F5AB2710088BE5E /* AppDelegate.swift */,
+				DB090CE01F5BFD2000253481 /* icons8-name_filled.png */,
 				DB38B96A1F5AB2710088BE5E /* ViewController.swift */,
 				DB38B96C1F5AB2710088BE5E /* Main.storyboard */,
+				DB090CE11F5BFE4F00253481 /* UserDetailsViewController.swift */,
+				DB8373761F5B224600B70DE5 /* LogInViewController.swift */,
 				DB38B96F1F5AB2710088BE5E /* Assets.xcassets */,
 				DB38B9711F5AB2710088BE5E /* LaunchScreen.storyboard */,
 				DB38B9741F5AB2710088BE5E /* Info.plist */,
@@ -151,7 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB38B9731F5AB2710088BE5E /* LaunchScreen.storyboard in Resources */,
-				DB38B9701F5AB2710088BE5E /* Assets.xcassets in Resources */,
+				DB3BB50C1F5BFB4200E4ED66 /* Assets.xcassets in Resources */,
 				DB38B96E1F5AB2710088BE5E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +221,8 @@
 			files = (
 				DB38B96B1F5AB2710088BE5E /* ViewController.swift in Sources */,
 				DB38B9691F5AB2710088BE5E /* AppDelegate.swift in Sources */,
+				DB090CE21F5BFE4F00253481 /* UserDetailsViewController.swift in Sources */,
+				DB8373771F5B224600B70DE5 /* LogInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,12 +359,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 52BFB742652638B186F30325 /* Pods-tinder-style-app.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C9B2KZDAUR;
 				INFOPLIST_FILE = "tinder-style-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.djaustin.tinder-style-app";
+				PRODUCT_BUNDLE_IDENTIFIER = com.djaustin.fireside;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -365,12 +374,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F20B6DA1206B461FB521FC8E /* Pods-tinder-style-app.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C9B2KZDAUR;
 				INFOPLIST_FILE = "tinder-style-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.djaustin.tinder-style-app";
+				PRODUCT_BUNDLE_IDENTIFIER = com.djaustin.fireside;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
