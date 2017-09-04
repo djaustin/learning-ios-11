@@ -10,17 +10,26 @@ import UIKit
 import Parse
 
 class UserDetailsViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    @IBAction func swipesWasPressed(_ sender: Any) {
+        performSegue(withIdentifier: "showSwipes", sender: nil)
+    }
     @IBAction func logoutWasTapped(_ sender: Any) {
         PFUser.logOut()
         performSegue(withIdentifier: "showLogin", sender: self)
     }
     
+    var newUser: Bool = false
+    
+    @IBOutlet weak var showSwipesButton: UIButton!
     @IBOutlet weak var userInterestedInSelector: UISegmentedControl!
     @IBOutlet weak var userGenderSelector: UISegmentedControl!
     let imagePicker = UIImagePickerController()
     @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        if newUser{
+            showSwipesButton.isEnabled = false
+        }
         setupImageView()
         populateFormIfLoggedIn()
         imagePicker.delegate = self
@@ -70,7 +79,8 @@ class UserDetailsViewController: UIViewController, UIImagePickerControllerDelega
             user["gender"] = userGender
             user.saveInBackground(block: { (success, error) in
                 if success {
-                    self.presentOkAlert(title: "Save Complete", message: "Details successfully updated")
+                    self.performSegue(withIdentifier: "showSwipes", sender: self)
+                    self.showSwipesButton.isEnabled = true
                 } else {
                     if let error = error {
                         self.presentOkAlert(title: "Error", message: error.localizedDescription)

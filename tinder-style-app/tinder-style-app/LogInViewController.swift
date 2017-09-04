@@ -18,8 +18,7 @@ extension UIViewController{
 }
 
 class LogInViewController: UIViewController, UITextFieldDelegate {
-
-    @IBOutlet weak var formBackground: UIView!
+    
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtUsername: UITextField!
     @IBAction func logInWasTapped(_ sender: Any?) {
@@ -29,10 +28,14 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-    func logInUser(username: String, password: String){
+    func logInUser(username: String, password: String, fromSignUp: Bool = false){
         PFUser.logInWithUsername(inBackground: username, password: password) { user, error in
             if let user = user {
-                self.performSegue(withIdentifier: "showUserDetails", sender: self)
+                if fromSignUp{
+                    self.performSegue(withIdentifier: "showUserDetails", sender: self)
+                } else {
+                    self.performSegue(withIdentifier: "showSwiper", sender: self)
+                }
             } else {
                 if let error = error{
                     self.presentOkAlert(title: "Log In Failed", message: error.localizedDescription)
@@ -50,7 +53,7 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         newUser.signUpInBackground { (success, error) in
             if success {
                 // If user was signed up, login using their credentials
-               self.logInUser(username: username, password: password)
+                self.logInUser(username: username, password: password, fromSignUp: true)
             } else {
                 if let error = error {
                     self.presentOkAlert(title: "Log In Failed", message: error.localizedDescription)
@@ -74,7 +77,7 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
             // Hide keyboard
             textField.resignFirstResponder()
         }
-      
+        
         
         // Tell text field to process return with default behaviour
         return true
@@ -86,8 +89,6 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        formBackground.layer.cornerRadius = 10
-        formBackground.layer.masksToBounds = true
         txtPassword.delegate = self
         txtUsername.delegate = self
         // Do any additional setup after loading the view.
@@ -95,7 +96,15 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
     
     func bypassLoginIfLoggedIn(){
         if PFUser.current() != nil {
-            performSegue(withIdentifier: "showUserDetails", sender: self)
+            performSegue(withIdentifier: "showSwiper", sender: self)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showUserDetails"{
+            if let vc = segue.destination as? UserDetailsViewController{
+                vc.newUser = true
+            }
         }
     }
 }

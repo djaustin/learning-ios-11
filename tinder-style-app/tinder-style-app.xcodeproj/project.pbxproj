@@ -14,6 +14,7 @@
 		DB38B9731F5AB2710088BE5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB38B9711F5AB2710088BE5E /* LaunchScreen.storyboard */; };
 		DB3BB50C1F5BFB4200E4ED66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB38B96F1F5AB2710088BE5E /* Assets.xcassets */; };
 		DB8373771F5B224600B70DE5 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8373761F5B224600B70DE5 /* LogInViewController.swift */; };
+		DB8C75101F5C3FBA00324BEE /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = DB8C750E1F5C3BB900324BEE /* giphy.gif */; };
 		EEC2AE8A479D7D9EE304DCF4 /* Pods_tinder_style_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5A716B0807CAC50E04DE88 /* Pods_tinder_style_app.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,8 @@
 		DB38B9721F5AB2710088BE5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB38B9741F5AB2710088BE5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB8373761F5B224600B70DE5 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		DB8C750E1F5C3BB900324BEE /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy.gif; sourceTree = "<group>"; };
+		DB8C75111F5C40F300324BEE /* giphy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = giphy.mp4; sourceTree = "<group>"; };
 		EC5A716B0807CAC50E04DE88 /* Pods_tinder_style_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tinder_style_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20B6DA1206B461FB521FC8E /* Pods-tinder-style-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tinder-style-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-tinder-style-app/Pods-tinder-style-app.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +88,8 @@
 			children = (
 				DB38B9681F5AB2710088BE5E /* AppDelegate.swift */,
 				DB090CE01F5BFD2000253481 /* icons8-name_filled.png */,
+				DB8C75111F5C40F300324BEE /* giphy.mp4 */,
+				DB8C750E1F5C3BB900324BEE /* giphy.gif */,
 				DB38B96A1F5AB2710088BE5E /* ViewController.swift */,
 				DB38B96C1F5AB2710088BE5E /* Main.storyboard */,
 				DB090CE11F5BFE4F00253481 /* UserDetailsViewController.swift */,
@@ -160,6 +165,7 @@
 			files = (
 				DB38B9731F5AB2710088BE5E /* LaunchScreen.storyboard in Resources */,
 				DB3BB50C1F5BFB4200E4ED66 /* Assets.xcassets in Resources */,
+				DB8C75101F5C3FBA00324BEE /* giphy.gif in Resources */,
 				DB38B96E1F5AB2710088BE5E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

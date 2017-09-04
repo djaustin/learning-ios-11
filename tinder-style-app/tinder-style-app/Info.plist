@@ -47,5 +47,22 @@
 	<string>Allow you to update your profile with your saved photos</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Allow you to update your profile with new photos from your camera</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Find people near you</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>tinderstyleapp.herokuapp.com</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
 </dict>
 </plist>
