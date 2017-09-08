@@ -13,6 +13,8 @@
 		DB38B96E1F5AB2710088BE5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB38B96C1F5AB2710088BE5E /* Main.storyboard */; };
 		DB38B9731F5AB2710088BE5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB38B9711F5AB2710088BE5E /* LaunchScreen.storyboard */; };
 		DB3BB50C1F5BFB4200E4ED66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB38B96F1F5AB2710088BE5E /* Assets.xcassets */; };
+		DB41B6DF1F6288C6008DC4F4 /* MatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB41B6DE1F6288C6008DC4F4 /* MatchTableViewCell.swift */; };
+		DB41B6E11F628A10008DC4F4 /* MatchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB41B6E01F628A0F008DC4F4 /* MatchesTableViewController.swift */; };
 		DB8373771F5B224600B70DE5 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8373761F5B224600B70DE5 /* LogInViewController.swift */; };
 		DB8C75101F5C3FBA00324BEE /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = DB8C750E1F5C3BB900324BEE /* giphy.gif */; };
 		EEC2AE8A479D7D9EE304DCF4 /* Pods_tinder_style_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5A716B0807CAC50E04DE88 /* Pods_tinder_style_app.framework */; };
@@ -29,6 +31,8 @@
 		DB38B96F1F5AB2710088BE5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB38B9721F5AB2710088BE5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB38B9741F5AB2710088BE5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB41B6DE1F6288C6008DC4F4 /* MatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTableViewCell.swift; sourceTree = "<group>"; };
+		DB41B6E01F628A0F008DC4F4 /* MatchesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesTableViewController.swift; sourceTree = "<group>"; };
 		DB8373761F5B224600B70DE5 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		DB8C750E1F5C3BB900324BEE /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy.gif; sourceTree = "<group>"; };
 		DB8C75111F5C40F300324BEE /* giphy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = giphy.mp4; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 				DB8C750E1F5C3BB900324BEE /* giphy.gif */,
 				DB38B96A1F5AB2710088BE5E /* ViewController.swift */,
 				DB38B96C1F5AB2710088BE5E /* Main.storyboard */,
+				DB41B6E01F628A0F008DC4F4 /* MatchesTableViewController.swift */,
+				DB41B6DE1F6288C6008DC4F4 /* MatchTableViewCell.swift */,
 				DB090CE11F5BFE4F00253481 /* UserDetailsViewController.swift */,
 				DB8373761F5B224600B70DE5 /* LogInViewController.swift */,
 				DB38B96F1F5AB2710088BE5E /* Assets.xcassets */,
@@ -227,6 +233,8 @@
 			files = (
 				DB38B96B1F5AB2710088BE5E /* ViewController.swift in Sources */,
 				DB38B9691F5AB2710088BE5E /* AppDelegate.swift in Sources */,
+				DB41B6E11F628A10008DC4F4 /* MatchesTableViewController.swift in Sources */,
+				DB41B6DF1F6288C6008DC4F4 /* MatchTableViewCell.swift in Sources */,
 				DB090CE21F5BFE4F00253481 /* UserDetailsViewController.swift in Sources */,
 				DB8373771F5B224600B70DE5 /* LogInViewController.swift in Sources */,
 			);

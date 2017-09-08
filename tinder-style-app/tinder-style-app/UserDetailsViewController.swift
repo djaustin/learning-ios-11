@@ -57,6 +57,7 @@ class UserDetailsViewController: UIViewController, UIImagePickerControllerDelega
             if let interestedInGender = user["interestedIn"] as? String {
                 userInterestedInSelector.selectedSegmentIndex = interestedInGender == "m" ? 0 : 1
             }
+            
         }
     }
     
